@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio details page</title>
+      <link rel="icon" href="/img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
+    <link rel="stylesheet" href='css/style.css'>
+    <script src="js/jquery.min.js"></script>
+     <script src="js/script.js"></script>
+</head>
+<body>
+    <style>
+        .blog-single{
+	color: #fff;
+	text-transform: capitalize;
+	font-size: 38px;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+}
+.container-1 {
+	width: 1140px;
+	margin: 0 auto;
+    position: relative;
+    z-index: 2;
+
+}
+.Home-Blog-Single{
+color: #fff;
+	font-size: 15px;
+	font-weight: 500;
+}
+.pd-top{
+    padding-top: 20px;
+}
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider-image {
+  width: 100%;
+  height: auto;
+  display: none; /* Hide all images first */
+}
+
+.slider-image.active {
+  display: block; /* Only active image visible */
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  border: none;
+  color: #1a76d1;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s, color 0.3s;
+  z-index: 10;
+}
+
+.left-button {
+  left: 20px;
+}
+
+.right-button {
+  right: 20px;
+}
+
+.nav-button:hover {
+  background-color: #1a76d1;
+  color: white;
+}
+.txt-center{
+    text-align: center;
+}
+.p-absoulute{
+    position: absolute;
+}
+.p-p-icon2 {
+	position: relative;
+	right: 10px; 
+	top: 50%; 
+	transform: translateY(-50%);
+	color: #007bff; 
+	cursor: pointer; 
+	width: 40px; 
+	height: 40px;
+	background-color: white;
+	margin-top: 6px;
+	font-size: 20px; 
+	border-radius: 5px;
+	display: flex;
+	align-items: center; 
+	justify-content: center; 
+  }
+	
+.p-p-icon2:hover{
+	color: black;
+}
+
+
+
+    </style>
+     <div id="mainHeader"> </div>
+    <div> 
+    <div class="container-2 item-2" style="min-height: 200px;">
+    <div class="mask2"></div>
+    <div class="container-1">
+    <div style="text-align: center;">
+     <h1 class="blog-single">Portfolio Details</h1>
+     <p class="Home-Blog-Single pd-top ">Home > Portfolio Details</p>
+    </div>
+    </div>
+      </div>
+    </div>
+
+     <div class="slider" style="padding-top: 100px;">
+  <img src="./img/call-bg.jpg" alt="Image 1" class="slider-image active">
+  <img src="./img/call-bg.jpg" alt="Image 2" class="slider-image">
+  <div style="background-color: #1A76D1; height: 70px; text-align: center; color: white;">
+  <div style="padding-top: 20px; background: #1a76d1;">
+  <div class="container" style="margin: auto; max-width: 1200px;">
+    <div class="flex" style="display: flex; justify-content: center; gap: 60px; flex-wrap: wrap; color: white;">
+      <div class="txt-center"> <strong>Category :</strong> Heart Surgery </div>
+      <div class="txt-center"> <strong>Date :</strong> April 20, 2019</div>
+      <div class="txt-center"> <strong>Client :</strong> Suke Agency</div>
+      <div class="txt-center"> <strong>Ags :</strong> Typo</div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  <button class="nav-button left-button" onclick="prevSlide()">&#10094;</button>
+  <button class="nav-button right-button" onclick="nextSlide()">&#10095;</button>
+</div>
+<div class="container" style="padding-top: 50px; padding-bottom: 100px;" >
+   <h1 >Here is the name of this project here</h1>
+   <p style="color: #757575;" class="pd-top">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor a ti incididunt ut labore et dolore to in magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna aliqua uis nostrud.Lorem ipsum dolor sit amet, in a in to in a consectetur.ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna in a aliqua uis nostrud.Lorem ipsum dolor sit amet, in aed do eiusmod</p>
+   <p style="color: #757575; padding-top: 20px;">ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna to in aliqua uis nostrud.Lorem ipsum dolor sit amet, in aed do eiusmod.ncididunt ut labore et dolore magna aliqua.</p>
+   <p style="color: #757575; padding-top: 20px;">ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna a aliqua uis nostrud.Lorem ipsum dolor sit amet, in aed do eiusmod.ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna aliqua uis nostrud.Lorem ipsum dolor sit amet, in aed do eiusmod. dolor sit amet, in aed do eiusmod.ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis to the in nostrud.abore et dolore magna aliqua uis nostrud.</p>
+   <div style="padding-top: 40px; display: flex; gap: 20px;">
+    <span>Share Now - </span>
+          <i class="fab fa-facebook p-absoulute p-p-icon2"></i>
+         <i class="fab fa-twitter p-absoulute p-p-icon2"></i>
+         <i class="fab fa-linkedin p-absoulute p-p-icon2"></i>
+         </div>
+</div>
+
+ <div id="mainFooter"></div>
+</body>
+</html>
