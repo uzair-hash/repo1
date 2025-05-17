@@ -49,5 +49,11 @@ $(document).on('click', '.popupTrigger, .close' , function(e) {
     $('body').toggleClass('scrollNone')
 
 })
+$(document).on('click', '.drawer1Trigger, .close2' , function(e) {
+    $('.drawer1').toggle()
+    $('.maskoverlay').toggle()
+    $('body').toggleClass('scrollNone')
+
+})
 
 //end popup function

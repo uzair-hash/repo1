@@ -709,15 +709,25 @@ slider .single-slider {
 	background: #1A76D1;
 }
 .maskoverlay{background-color: black; opacity: 0.4; display: none; position: fixed; inset: 0; z-index: 10;}
-.popup1{background-color: white; border-radius: 6px; display: none; position: fixed; z-index: 12;
+.popup1 ,.drawer1{background-color: white; border-radius: 6px; display: none; position: fixed; z-index: 12;
 	width: 600px; max-width: 95%; top:50%; left: 50%; transform: translate(-50%,-50%); transition: left 0.5s ease, transform 0.5s ease;
 }
-.popup1 header{padding: 8px 16px; border-bottom: 1px solid #ccc; font-size: 20px;font-weight: bold;}
-.popup1 footer{border-top:1px solid #ccc; padding: 8px 16px;text-align: right;}
-.popup1 .innerContent {
+.popup1 header,.drawer1 header{padding: 8px 16px; border-bottom: 1px solid #ccc; font-size: 20px;font-weight: bold;}
+.popup1 footer,.drawer1 footer{border-top:1px solid #ccc; padding: 8px 16px;text-align: right;}
+.popup1 .innerContent ,.drawer1 .innerContent {
 	padding: 16px;
 	max-height: calc(100vh - 200px);
 	overflow: auto;
+}
+.cp{cursor: pointer;}
+.drawer1 {
+	display: none;
+	left: auto;
+	right: 0;
+	width: 500px;
+	top: 0;
+	transform: unset;
+	bottom: 0;
 }
 .scrollNone{overflow: hidden;}
 
