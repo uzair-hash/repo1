@@ -724,14 +724,16 @@ slider .single-slider {
 	position: fixed;
 }
 .drawer1 {
-	display: none;
+	display: block;
 	left: auto;
-	right: 0;
+	right: -100%;
 	width: 500px;
 	top: 0;
 	transform: unset;
 	bottom: 0;
+	transition: right 1s ease;
 }
+.drawer1.active{right:0}
 .scrollNone{overflow: hidden;}
 
 /*simple responsive.css style start*/

@@ -50,7 +50,7 @@ $(document).on('click', '.popupTrigger, .close' , function(e) {
 
 })
 $(document).on('click', '.drawer1Trigger, .close2' , function(e) {
-    $('.drawer1').toggle()
+    $('.drawer1').toggleClass('active')
     $('.maskoverlay').toggle()
     $('body').toggleClass('scrollNone')
 
